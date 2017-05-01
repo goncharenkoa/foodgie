@@ -62,13 +62,39 @@
 .fg-btn-success {
     @extend .color-bg-theme-notification;
     @extend .color-white;
+    @extend .t14;
 
     box-shadow: 0 1px 3px rgba(110, 137, 45, 0.29);
     min-width: 11.6875rem;
-    padding: 0.75rem 0.625rem;
+    padding: 0.6rem 0.625rem;
     border-radius: 0.1875rem;
     transition: .3s;
+    @include mobile {
+        min-width: auto;
+        padding: 0.3rem 0.625rem;
+        font-size: 0.75rem;
+    }
     &:hover {
         background: darken(map_get($color-map, 'theme-notification'), 5%);
+    }
+}
+
+.fg-btn-default {
+    @extend .fg-btn-success;
+
+    background: map_get($color-map, 'theme-text');
+    box-shadow: 0 1px 3px rgba(163, 173, 167, 0.29);
+    &:hover {
+        background: darken(map_get($color-map, 'theme-text'), 5%);
+    }
+}
+
+.btn-inline {
+    @include mobile {
+        margin-top: 0.9375rem;
+        display: flex;
+    }
+    .fg-btn-default {
+        margin-right: 0.9375rem;
     }
 }

@@ -107,6 +107,15 @@ $( document ).ready( function () {
 	    e.preventDefault();
 	});
 
+	//TABLE
+	$('#custom-table').DataTable( {
+        "paging":   false,
+        "info":     false,
+		"searching": false,
+		// "scrollY":        "500px",
+        // "scrollCollapse": true,
+    } );
+
 	// $(window).scroll(function() {
 	//     var scroll = $(window).scrollTop();
 
@@ -151,7 +160,8 @@ $( document ).ready( function () {
     $(window).on("load",function(){
         $(".card-body.big").mCustomScrollbar();
     });
-
-
+	$(window).on("load",function(){
+        $(".card-body.full-size").mCustomScrollbar();
+    });
 
 })(jQuery);

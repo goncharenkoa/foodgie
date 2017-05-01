@@ -1,11 +1,16 @@
+.mCSB_inside > .mCSB_container {
+	margin-right: 1.25rem;
+}
 .mCSB_scrollTools .mCSB_draggerRail {
-	@extend .color-bg-card-background;
+	@extend .color-theme-background;
+	width: 0.25rem;
 }
 .mCSB_scrollTools .mCSB_dragger {
-	background: map_get($color-map, 'theme-devider2')!important;
+	background: map_get($color-map, 'theme-notification')!important;
 	border-radius: 0.125rem;
-	width: 0.3125rem;
+	width: 0.25rem;
+	left: 0.375rem;
 	.mCSB_dragger_bar {
-		background: map_get($color-map, 'theme-devider2')!important;
+		background: map_get($color-map, 'theme-notification')!important;
 	}
 }

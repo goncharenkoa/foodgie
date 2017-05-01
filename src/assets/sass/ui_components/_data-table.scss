@@ -1,0 +1,44 @@
+table.dataTable thead {
+    th {
+        @extend .color-theme-text-heading;
+        border-bottom: 1px solid map_get($color-map, 'theme-background');
+        padding-left: 1.5rem;
+        position: relative;
+        &.sorting {
+            background-image: url("../img/table-arrow.svg");
+        }
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+table.dataTable.no-footer {
+    border-bottom: none;
+}
+.card-body {
+    .custom-table {
+        >tbody {
+            >tr {
+                >td {
+                    text-align: left;
+                    border-bottom: 1px solid map_get($color-map, 'theme-background');
+                    padding-left: 1.5rem;
+                    &:nth-child(even) {
+                        @extend .color-theme-text-heading2;
+                        @extend .color-bg-table-even;
+                    }
+                    &.inactive {
+                        color: #a2b78d;
+                    }
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.table-responsive {
+    border: none;
+}

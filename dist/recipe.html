@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FoodGIE</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="css/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="secondary">
+        <span class="nav-toggle"><i class="icon-menu-1"></i></span>
+        <a href="#" class="logo"><img src="img/foodgie-logo.svg" alt="Foodgie logo"></a>
+        <div class="header-right visible-xs">
+            <div class="dropdown user-dropdown">
+              <div class="dropdown-toggle" data-toggle="dropdown">My profile
+                  <span class="caret"></span></div>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+        </div><!-- header-right -->
+
+        <ul class="navigation">
+            <li class="active">
+                <a href="">
+                    <img src="img/plant.svg" alt="">
+                    <span>Overview</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-receipt"></i>
+                    <span>Recipes</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-alert"></i>
+                    <span>Alerts</span>
+                </a>
+            </li>
+        </ul>
+
+        <p class="copyrights">Copyright &copy; 2017 FOODGIE. <br>All rights reserved.</p>
+    </aside><!-- secondary -->
+
+    <div class="main-wrapper">
+        <header class="header">
+            <div class="flex-row flex-hb-desktop flex-hb-tablet flex-he-mobile">
+                <span class="nav-toggle"><i class="icon-menu-1"></i></span>
+                <a href="#" class="visible-xs mobile-logo"><img src="img/foodgie-logo-mobile.svg" alt=""></a>
+                <ul class="menu-top hidden-xs">
+                  <li><a><i class="icon-home"></i> Foodgie-Dashboard / Home</a></li>
+                </ul><!-- menu-left -->
+              <div class="header-right">
+
+                  <ul class="menu-top">
+                      <li class="hidden-xs"><a href="">Shop</a></li>
+                      <li class="notification"><a href=""><i class="icon-notification"></i></a></li>
+                      <li>
+                          <div class="dropdown user-dropdown">
+                              <div class="dropdown-toggle" data-toggle="dropdown">J<span class="hidden-xs">ulien</span> P<span class="hidden-xs">aquet</span> <span class="caret"></span>
+                              </div>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- header-right -->
+        </div>
+
+    </header><!-- header -->
+
+    <div class="main">
+        <div class="container">
+            <div class="flex-row-tablet flex-row-desktop flex-hb mbm">
+                <div>
+                    <h1>Container #12</h1>
+                </div>
+                <div>
+                    <span>Recipe launched 16 days ago</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="card">
+                        <div class="card-head mobile">
+                            <h2>Growing recipes in your Foodgie</h2>
+                            <button type="submit" class="fg-btn-success">Launch a recipe</button>
+                        </div>
+                        <div class="card-body neutral full-size">
+                            <div class="table-responsive">
+                                <table id="custom-table" class="custom-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Shelf ids</th>
+                                            <th>Recipe</th>
+                                            <th>Mode</th>
+                                            <th>Harvest</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1 to 6</td>
+                                            <td>Strawberries</td>
+                                            <td>Economic</td>
+                                            <td>Now</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5 to 7</td>
+                                            <td>Brussels Sprouts</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">10 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kale</td>
+                                            <td>Regular</td>
+                                            <td class="inactive">12 days</td>
+                                            <td>10/01/2017</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- row -->
+
+            <div class="flex-row-tablet flex-row-desktop flex-hb flex-vc">
+                <h3>Available Recipes</h3>
+
+                <div class="btn-inline">
+                    <button type="submit" class="fg-btn-default">Import Recipes</button>
+                    <button type="submit" class="fg-btn-success">Create a news Recipe</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="block-list">
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Strawberries</h4>
+                                <img src="img/strawberry.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Brussels Sprouts</h4>
+                                <img src="img/brussels-sprouts.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Lettuces</h4>
+                                <img src="img/lettuces.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Kale</h4>
+                                <img src="img/kale.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Thai Salad</h4>
+                                <img src="img/salad.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Strawberries <strong>(Custom)</strong></h4>
+                                <img src="img/strawberries.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                        <div class="res-block">
+                            <a href="">
+                                <h4>Tomatoes <strong>(Custom)</strong></h4>
+                                <img src="img/tomatoe.jpg" alt="">
+                                <span>Last updated: 10/10/2017</span>
+                            </a>
+                        </div><!-- res-block -->
+                    </div><!-- block-list -->
+                </div>
+            </div><!-- row -->
+
+        </div>
+    </main>
+</div><!-- main-wrapper -->
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/bootstrap-tabcollapse.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
