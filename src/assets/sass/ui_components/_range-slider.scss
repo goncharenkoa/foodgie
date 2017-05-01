@@ -1,0 +1,101 @@
+.input-range {
+    @extend .color-theme-text-heading2;
+
+    margin-bottom: 1.875rem;
+    span {
+        font-weight: 400;
+    }
+    i {
+        @extend .color-theme-notification;
+
+        display: inline-block;
+        width: 25px;
+        padding-right: 10px;
+        text-align: center;
+    }
+}
+
+.irs-line {
+    height: 5px;
+    background-color: #f2f2f2;
+}
+
+.irs-bar {
+    height: 5px;
+    background-color: #98c82b;
+}
+
+.irs-slider {
+    width: 24px;
+    height: 24px;
+    background-color: rgba(255, 255, 255, 0.37);
+    box-shadow: 0 2px 6px rgba(152, 200, 43, 0.31);
+    border-radius: 50%;
+    z-index: 0;
+    top: 15px;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 14px;
+        height: 14px;
+        background-color: #98c82b;
+        box-shadow: 0 2px 6px rgba(50, 50, 93, 0.16);
+        border-radius: 50%;
+        z-index: 3;
+    }
+}
+
+.irs-from, .irs-to, .irs-single {
+    background-color: white;
+    box-shadow: 0 4px 13px gainsboro;
+    border-radius: 0;
+    color: #222;
+    padding: 3px 5px;
+    font-size: 12px;
+}
+.irs-single {
+    top: auto;
+    bottom: -28px;
+    &:after {
+        bottom: auto;
+        top: -3px;
+        content: "";
+        border-top: transparent;
+        border-bottom-color: #fff;
+    }
+}
+
+.irs-to {
+    top: auto;
+    bottom: -28px;
+    &:after {
+        bottom: auto;
+        top: -3px;
+        content: "";
+        border-top: transparent;
+        border-bottom-color: #fff;
+    }
+    &:before {
+        content: "max:";
+        display: inline-block;
+    }
+}
+
+.irs-from{
+    top: auto;
+    bottom: -28px;
+    &:before {
+        content: "min:";
+        display: inline-block;
+    }
+    &:after {
+        bottom: auto;
+        top: -3px;
+        content: "";
+        border-top: transparent;
+        border-bottom-color: #fff;
+    }
+}

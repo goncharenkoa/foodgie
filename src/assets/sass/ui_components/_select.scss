@@ -1,0 +1,26 @@
+select {
+	@extend .color-bd-theme-devider2;
+	@extend .color-grey;
+
+	min-width: 10.0625rem;
+	height: 2.625rem;
+	font-size: 0.775rem;
+	line-height: 1.125rem;
+	border-radius: 0.1875rem;
+	box-shadow: 0 1px 3px #f2f2f2;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28192, 201, 195%29'></polygon></svg>");
+	background-origin: content-box;
+	background-position: right -1rem center;
+	background-repeat: no-repeat;
+	background-size: 0.5625rem 0.375rem;
+	padding-left: 0.625rem;
+	padding-right: 1.5rem;
+	transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+	appearance: none;
+	&:focus, &:hover {
+		@extend .color-bd-theme-devider2;
+	}
+	@include mobile {
+		height: 2rem;
+	}
+}

@@ -1,0 +1,11 @@
+.mCSB_scrollTools .mCSB_draggerRail {
+	@extend .color-bg-card-background;
+}
+.mCSB_scrollTools .mCSB_dragger {
+	background: map_get($color-map, 'theme-devider2')!important;
+	border-radius: 0.125rem;
+	width: 0.3125rem;
+	.mCSB_dragger_bar {
+		background: map_get($color-map, 'theme-devider2')!important;
+	}
+}

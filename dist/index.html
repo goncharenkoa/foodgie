@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>FoodGIE</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="secondary">
+        <span class="nav-toggle"><i class="icon-menu-1"></i></span>
+        <a href="#" class="logo"><img src="img/foodgie-logo.svg" alt="Foodgie logo"></a>
+        <div class="header-right visible-xs">
+            <div class="dropdown user-dropdown">
+              <div class="dropdown-toggle" data-toggle="dropdown">My profile
+                  <span class="caret"></span></div>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+        </div><!-- header-right -->
+
+        <ul class="navigation">
+            <li class="active">
+                <a href="">
+                    <img src="img/plant.svg" alt="">
+                    <span>Overview</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-receipt"></i>
+                    <span>Recipes</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="icon-alert"></i>
+                    <span>Alerts</span>
+                </a>
+            </li>
+        </ul>
+
+        <p class="copyrights">Copyright &copy; 2017 FOODGIE. <br>All rights reserved.</p>
+    </aside><!-- secondary -->
+
+    <div class="main-wrapper">
+        <header class="header">
+            <div class="flex-row flex-hb-desktop flex-hb-tablet flex-he-mobile">
+                <span class="nav-toggle"><i class="icon-menu-1"></i></span>
+                <a href="#" class="visible-xs mobile-logo"><img src="img/foodgie-logo-mobile.svg" alt=""></a>
+                <ul class="menu-top hidden-xs">
+                  <li><a><i class="icon-home"></i> Foodgie-Dashboard / Home</a></li>
+                </ul><!-- menu-left -->
+              <div class="header-right">
+
+                  <ul class="menu-top">
+                      <li class="hidden-xs"><a href="">Shop</a></li>
+                      <li class="notification"><a href=""><i class="icon-notification"></i></a></li>
+                      <li>
+                          <div class="dropdown user-dropdown">
+                              <div class="dropdown-toggle" data-toggle="dropdown">J<span class="hidden-xs">ulien</span> P<span class="hidden-xs">aquet</span> <span class="caret"></span>
+                              </div>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- header-right -->
+        </div>
+
+    </header><!-- header -->
+
+    <div class="main">
+        <div class="container">
+            <div class="row flex-row-desktop flex-row-tablet">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card card-sm">
+                        <div class="card-head">
+                            <h2>Climate</h2>
+                            <button class="fg-button" type="button">Live metrics</button>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="icon-temperature"></i>
+                                        <span class="text-big">29°</span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Temperature</span>
+                                    </td>
+                                    <td>
+                                        <i class="icon-humidity"></i>
+                                        <span class="text-big">70%</span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Humidity</span>
+                                    </td>
+                                    <td>
+                                        <i class="icon-light"></i>
+                                        <span class="text-big">10%</span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Light Level</span>
+                                    </td>
+                                    <td>
+                                        <i class="icon-cloud"></i>
+                                        <span class="text-big">512 <span class="hidden-sm hidden-md">PPM</span></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!-- card -->
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card card-sm">
+                        <div class="card-head">
+                            <h2>Water</h2>
+                            <button class="fg-button" type="button">Live metrics</button>
+                        </div>
+                        <div class="card-body">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <i class="icon-ph"></i>
+                                        <span class="text-big">7.9</span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Ph</span>
+                                    </td>
+                                    <td>
+                                        <i class="icon-conductivity"></i>
+                                        <span class="text-big">2.1 <span class="hidden-sm hidden-md">m5/cm</span></span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Conductivity</span>
+                                    </td>
+                                    <td>
+                                        <i class="icon-temperature"></i>
+                                        <span class="text-big">32°</span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Temperature</span>
+                                    </td>
+                                    <td>
+                                        <i class="water icon-critical"></i>
+                                        <span class="text-big">full</span>
+                                        <span class="hidden-xs hidden-sm hidden-md">Water</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><!-- card -->
+                </div>
+            </div><!-- flex-row -->
+
+            <div class="row flex-row-desktop flex-row-tablet">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>Latest Alerts</h2>
+                            <a href="" class="link-text">View all Alerts <i class="icon-right-trinagle"></i></a>
+                        </div>
+                        <div class="card-body big alerts">
+                            <ul class="article-list">
+                                <li>
+                                    <div class="article-icon">
+                                        <img src="img/very-low.png" alt="">
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Nutrient solution very low in the lettuece 1</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                                <li>
+                                    <div class="article-icon">
+                                        <i class="icon-invoice"></i>
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Your monthly invoice has been sent</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                                <li>
+                                    <div class="article-icon">
+                                        <img src="img/critical.png" alt="">
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Nutrients solution critical in the lettuce 5</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                                <li>
+                                    <div class="article-icon">
+                                        <i class="icon-battery"></i>
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Batteries are full now</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                                <li>
+                                    <div class="article-icon">
+                                        <i class="icon-battery"></i>
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Batteries are full now</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                                <li>
+                                    <div class="article-icon">
+                                        <i class="icon-battery"></i>
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Batteries are full now</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                                <li>
+                                    <div class="article-icon">
+                                        <i class="icon-battery"></i>
+                                    </div>
+                                    <div class="article">
+                                        <h4><a href="">Batteries are full now</a></h4>
+                                        <p>10/10/14, 10:30 PM</p>
+                                    </div><!-- article -->
+                                </li>
+                            </ul><!-- article-list -->
+                        </div>
+                    </div><!-- card -->
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card">
+                        <div class="card-head">
+                            <h2>Cameras</h2>
+                            <select>
+                                <option value="">Cam 1</option>
+                                <option value="">Cam 2</option>
+                                <option value="">Cam 3</option>
+                            </select>
+                        </div>
+                        <div class="card-body v-iframe">
+                            <div class="video-stream">
+                                <img src="img/poster.jpg" alt="">
+                                <a href="">FULLSCREEN</a>
+                            </div>
+                        </div>
+                    </div><!-- card -->
+                </div>
+            </div><!-- flex-row -->
+
+            <div class="row flex-row-desktop flex-row-tablet">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card card-middle">
+                        <div class="card-head">
+                            <h2>Growth</h2>
+                            <select>
+                                <option value="">Lettuces 1</option>
+                                <option value="">Lettuces 2</option>
+                                <option value="">Lettuces 3</option>
+                            </select>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body-middle">
+                                <div class="growth-container phase2">
+                                    <div class="growth-1">
+                                        <img src="img/phase1.svg" alt="">
+                                    </div>
+                                    <div class="growth-2">
+                                        <img src="img/phase2.svg" alt="">
+                                    </div>
+                                    <div class="growth-3">
+                                        <img src="img/phase3.svg" alt="">
+                                    </div>
+                                    <div class="growth-4 disabled">
+                                        <img src="img/phase4.svg" alt="">
+                                    </div>
+                                    <div class="growth-5 disabled">
+                                        <img src="img/phase5.svg" alt="">
+                                    </div>
+                                </div>
+                                <span class="text-big">Seed stage</span>
+                                <span class="text-small">Don't forget to cut the flowers</span>
+                            </div><!-- card-body-middle -->
+
+                            <div class="card-body-bottom">Harvest <strong>in 10 days</strong>...</div>
+                        </div>
+                    </div><!-- card -->
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="card card-middle">
+                        <div class="card-head">
+                            <h2>Recipes in your foodgie</h2>
+                        </div>
+                        <div class="card-body card-body-chart">
+                           <div class="chart-wrapper">
+                                <canvas id="myChart" width="255" height="255"></canvas>
+                            </div>
+                        </div>
+                    </div><!-- card -->
+                </div>
+        </div>
+    </div>
+</main>
+</div><!-- main-wrapper -->
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/bootstrap-tabcollapse.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>

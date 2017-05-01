@@ -1,0 +1,74 @@
+@mixin fg-btn () {
+    @extend .t10;
+    @extend .text-center;
+    @extend .color-white;
+
+    border-radius: 0.6875rem;
+    box-shadow: none!important;
+    padding: 0.2125rem 0.3125rem;
+    transition: 0.3s;
+    position: relative;
+    user-select: none;
+    outline: none!important;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.fg-button {
+    @include fg-btn ();
+    @extend .color-bg-theme-notification;
+
+    min-width: 6.625rem;
+    @include mobile {
+        font-size: 0.625rem;
+    }
+}
+
+.btn-primary {
+    @extend .color-bg-theme-text-heading2;
+    @extend .color-white;
+
+    display: block;
+    float: left;
+    padding: 10px 20px;
+    box-shadow: 0 1px 3px rgba(33, 156, 74, 0.29);
+    border: 1px solid transparent;
+    &:hover {
+        background: darken(map_get($color-map, 'theme-text-heading2'), 5%);
+        border: 1px solid transparent;
+    }
+    &.disabled {
+        @extend .color-disabled;
+
+        background: transparent;
+        box-shadow: none;
+        border: 1px solid map_get($color-map, 'theme-devider2');
+        border-left: none;
+        &:first-child {
+            border-left: 1px solid map_get($color-map, 'theme-devider2');
+            &:hover {
+                border-left: 1px solid map_get($color-map, 'theme-devider2');
+            }
+        }
+        &:hover {
+            background-color: transparent;
+            border: 1px solid map_get($color-map, 'theme-devider2');
+            border-left: none;
+        }
+    }
+}
+
+.fg-btn-success {
+    @extend .color-bg-theme-notification;
+    @extend .color-white;
+
+    box-shadow: 0 1px 3px rgba(110, 137, 45, 0.29);
+    min-width: 11.6875rem;
+    padding: 0.75rem 0.625rem;
+    border-radius: 0.1875rem;
+    transition: .3s;
+    &:hover {
+        background: darken(map_get($color-map, 'theme-notification'), 5%);
+    }
+}

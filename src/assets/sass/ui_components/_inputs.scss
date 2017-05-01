@@ -1,0 +1,198 @@
+.form-control {
+    @extend .color-bd-theme-devider2;
+    box-shadow: none;
+    @include placeholder {
+        color: map_get($color-map, 'grey');
+        opacity: 1;
+    }
+    &.disabled {
+        @extend .color-bg-theme-background;
+        @extend .color-bd-theme-background;
+        @include placeholder {
+            color: map_get($color-map, 'disabled2');
+        }
+    }
+}
+.form-inline {
+    label {
+        @extend .color-theme-text-heading;
+
+        margin-right: 0.625rem;
+    }
+    .form-control {
+        margin-right: 1.875rem;
+        min-width: 15rem;
+        @include placeholder {
+            color: map_get($color-map, 'grey');
+            opacity: 1;
+        }
+        &.sm {
+            width: 4.625rem;
+            min-width: auto;
+            margin-right: 0.9375rem;
+        }
+    }
+}
+
+
+input[type="checkbox"] {
+  // Hide the navtive checkbox, but don't remove it form the DOM to make sure tabbing works, styling goes on the label
+  &.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  // Create the checkbox
+  + .checkbox-label {
+      cursor: pointer;
+      @extend .color-theme-text-heading;
+      font-weight: 400;
+      &.disabled {
+          color: map_get($color-map, 'disabled4');
+      }
+    &:before {
+     @extend .color-bg-white;
+     @extend .color-bd-theme-devider2;
+
+      content: '';
+      border-radius: 0.1875rem;
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      padding-top: 0;
+      margin-right: 0.5rem;
+      vertical-align: top;
+      cursor: pointer;
+      text-align: center;
+      float: left;
+      transition: none;
+      box-sizing: border-box;
+    }
+    &:hover {
+        &:before {
+            @extend .color-bg-white;
+        }
+    }
+  }
+  &.checkbox-custom {
+      // Create the checkbox
+      + .checkbox-label {
+        &:before {
+          background: transparent;
+          margin-right: 0.375rem;
+        }
+      }
+  }
+  &:checked {
+    + .checkbox-label {
+      color: map_get($color-map, 'theme-notification');
+      &:before {
+        content: "";
+        background: map_get($color-map, 'theme-notification') url("../img/check.svg") center center no-repeat;
+        @extend .color-bd-theme-notification;
+        display: inline-block;
+        border-radius: 0.1875rem;
+      }
+    }
+  }
+  &:focus, &:active {
+    + .checkbox-label {
+      &:before {
+          border-radius: 0.0625rem;
+          color: map_get($color-map, 'white');
+      }
+    }
+  }
+
+}
+
+.time-block-container {
+    @extend .flex-row;
+    @extend .flex-hc;
+    @include mobile {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.time-block {
+    margin: 3.125rem 1.875rem 1.875rem;
+    @include mobile {
+        margin: 2rem .0rem 0rem;
+        width: 48%;
+    }
+    .form-control {
+        text-align: center;
+        width: 8.125rem;
+        @include mobile {
+            width: 100%;
+        }
+    }
+    span {
+        @extend .color-theme-text-heading;
+        padding: 0.9375rem 0;
+        display: block;
+        text-align: center;
+        &.disabled {
+            color: map_get($color-map, 'disabled3');
+        }
+    }
+    .f-group {
+        margin-top: 0.9375rem;
+    }
+}
+
+
+//FLIP
+.onoffswitch {
+    position: relative;
+    width: 70px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #98C82B; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #219C4A; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 3px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    border: 2px solid #FFFFFF;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}

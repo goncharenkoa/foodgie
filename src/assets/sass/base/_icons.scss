@@ -1,0 +1,73 @@
+@include font-face(foodgie, '../fonts/foodgie');
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'foodgie' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+  content: "\ea24";
+}
+.icon-alert:before {
+  content: "\e900";
+}
+.icon-battery:before {
+  content: "\e901";
+}
+.icon-bottom-triangle:before {
+  content: "\e902";
+}
+.icon-cloud:before {
+  content: "\e903";
+}
+.icon-cog:before {
+  content: "\e904";
+}
+.icon-conductivity:before {
+  content: "\e905";
+}
+.icon-critical:before {
+  content: "\e906";
+}
+.icon-humidity:before {
+  content: "\e907";
+}
+.icon-invoice:before {
+  content: "\e908";
+}
+.icon-light:before {
+  content: "\e909";
+}
+.icon-notification:before {
+  content: "\e90a";
+}
+.icon-ph:before {
+  content: "\e90b";
+}
+.icon-receipt:before {
+  content: "\e90f";
+}
+.icon-right-trinagle:before {
+  content: "\e910";
+}
+.icon-temperature:before {
+  content: "\e911";
+}
+.icon-user:before {
+  content: "\e914";
+}
+.icon-menu-1:before {
+  content: "\ea53";
+}
+
+

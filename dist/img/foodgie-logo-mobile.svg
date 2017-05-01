@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="68px" viewBox="0 0 52 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>foodgie-logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-3" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-5" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-7" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-9" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-11" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-13" x="0" y="0" width="105.795" height="93.232"></rect>
+        <rect id="path-15" x="0" y="0" width="105.795" height="93.232"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="foodgie-logo" transform="translate(-27.000000, 0.000000)">
+            <g id="Clipped">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M52.949,53.497 L40.97,60.613 C45.091,63.382 49.462,65.568 52.949,67.083 L52.949,53.497 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M52.949,30.391 L52.949,13.448 L35.294,23.937 C30.835,30.333 27.719,36.233 27.719,41.927 C27.719,43.03 27.851,44.107 28.097,45.156 L52.949,30.391 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-4)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M52.949,50.416 L52.949,33.472 L28.946,47.733 C30.767,52.024 34.427,55.792 38.609,58.935 L52.949,50.416 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-6)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M52.949,10.366 L52.949,0 C48.504,6.698 43.587,12.8 39.281,18.487 L52.949,10.366 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-8)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-10" fill="white">
+                    <use xlink:href="#path-9"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M52.949,30.391 L77.802,45.156 C78.047,44.107 78.179,43.03 78.179,41.927 C78.179,36.233 75.063,30.333 70.605,23.937 L52.949,13.448 L52.949,30.391 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-10)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-12" fill="white">
+                    <use xlink:href="#path-11"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M66.617,18.486 C62.312,12.799 57.394,6.697 52.949,0 L52.949,10.366 L66.617,18.486 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-12)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-14" fill="white">
+                    <use xlink:href="#path-13"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M76.953,47.733 L52.949,33.472 L52.949,50.414 L67.29,58.935 C71.472,55.792 75.131,52.024 76.953,47.733" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-14)"></path>
+            </g>
+            <g id="Clipped">
+                <mask id="mask-16" fill="white">
+                    <use xlink:href="#path-15"></use>
+                </mask>
+                <g id="SVGID_1_"></g>
+                <path d="M52.949,67.083 C56.434,65.567 60.806,63.381 64.928,60.612 L52.949,53.497 L52.949,67.083 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-16)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

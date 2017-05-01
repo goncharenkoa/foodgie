@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="80px" viewBox="0 0 60 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons_Sprite_SVG" transform="translate(-103.000000, 0.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(103.000000, 0.000000)">
+                <circle id="Oval" fill="#A7CF42" cx="30" cy="50.6" r="29.4"></circle>
+                <path d="M31.5,54.1 C38.9,45.4 39.8,35.4 39.9,34.6 C34.8,34.1 28.5,37.6 24.1,43.9 C18.3,52 15.7,64.8 20.9,68.6 C26.1,72.4 37.3,65.8 43.1,57.6 C47,52.1 48.4,46 47.4,41.4 C39.4,52.7 31.5,54.1 31.5,54.1 Z M41.6,34.9 C41.6,34.9 39.7,46.1 34.4,51.8 C34.4,51.8 45.9,43.5 48.4,35.4 C50.9,27.3 46.3,10.7 56,0.7 C55.9,0.7 43.5,5.6 41.6,34.9 Z M15.4,33.4 C14,33.4 12.8,34.6 12.8,36 C12.8,37.4 14,38.6 15.4,38.6 C16.8,38.6 18,37.4 18,36 C18,34.6 16.8,33.4 15.4,33.4 Z M14.1,52.1 C12.3,52.1 10.9,53.5 10.9,55.3 C10.9,57.1 12.3,58.5 14.1,58.5 C15.9,58.5 17.3,57.1 17.3,55.3 C17.3,53.6 15.9,52.1 14.1,52.1 Z M36.6,33.4 C37.8,33.4 38.9,32.4 38.9,31.1 C38.9,29.8 37.9,28.8 36.6,28.8 C35.4,28.8 34.3,29.8 34.3,31.1 C34.3,32.4 35.4,33.4 36.6,33.4 Z" id="Shape" fill="#229C49"></path>
+            </g>
+        </g>
+    </g>
+</svg>

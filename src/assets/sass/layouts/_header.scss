@@ -1,0 +1,180 @@
+.header {
+	background: map_get($color-map, 'theme-header-background');
+	min-height: 1.75rem;
+	padding: 1rem 1.875rem;
+	@include mobile {
+		padding: 1rem 0.9375rem;
+		min-height: 1.75rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 50;
+	}
+	@include tablet {
+		padding: 0.9375rem;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 50;
+	}
+	@include mddesktop {
+		padding: 1rem 3.75rem;
+	}
+}
+
+.nav-toggle {
+	@extend .color-white;
+	
+	display: none;
+	max-width: 2.1875rem;
+	cursor: pointer;
+	position: fixed;
+	left: 0.9375rem;
+	top: 0.9375rem;
+	z-index: 30;
+	@include mobile {
+		display: block;
+	}
+	@include tablet {
+		display: block;
+		left: 0.9375rem;
+	}
+	i {
+		@extend .t30;
+	}
+}
+
+.mobile-logo {
+	display: block;
+	position: absolute;
+	top: 0.9375rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1.875rem;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+.secondary {
+	.nav-toggle  {
+		@extend .color-theme-notification;
+	}
+}
+.menu-top {
+	@extend .flex-row;
+	@extend .flex-vc;
+	margin: 0 -0.625rem;
+
+	@include mobile {
+		margin: 0;
+		float: right;
+	}
+	@include tablet {
+		margin: 0;
+		margin-left: 4.375rem;
+	}
+	li {
+		@extend .t16;
+		@extend .color-white;
+
+		display: inline-block;
+		transition: 0.3s;
+		padding: 0 0.625rem;
+		@include mobile {
+			padding: 0 0.5rem;
+		}
+		@include tablet {
+			padding-right: 0.9375rem;
+		}
+		a {
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+		&:last-child {
+			@include mobile {
+				padding-right: 0;
+			}
+		}
+		i {
+			padding-right: 0.3125rem;
+			font-weight: bold;
+		}
+	}
+}
+
+.notification {
+	a {
+		position: relative;
+		display: block;
+		&:after {
+			@extend .color-bg-theme-notification;
+
+			content: "";
+			width: 0.5rem;
+			height: 0.5rem;
+			position: absolute;
+			top: 0.125rem;
+			right: 0.125rem;
+			border-radius: 50%;
+		}
+	}
+	i {
+		@extend .t30;
+		padding-right: 0!important;
+	}
+}
+
+.user-dropdown {
+	@extend .color-white;
+
+	background: none;
+	div {
+		@extend .flex-row;
+		@extend .flex-vc;
+		@extend .t17;
+		
+		cursor: pointer;
+		img {
+			display: inline-block;
+			width: 2.8125rem;
+			margin: 0 1.125rem;
+			@include mobile {
+				max-width: 2rem;
+				margin: 0 .5rem;
+			}
+		}
+		@include mobile {
+			font-size: 1rem;
+		}
+	}
+
+	.caret {
+		margin-left: 0.375rem;
+	}
+	span {
+		&:first-child {
+			padding-right: 0.3125rem;
+		}
+	}
+}
+
+
+.dropdown-menu {
+	min-width: 100%;
+	@include mobile {
+		min-width: 9.375rem;
+		right: 0;
+		left: auto;
+	}
+	li {
+		display: block;
+		padding: 0;
+		a {
+			@extend .t14;
+		}
+	}
+}

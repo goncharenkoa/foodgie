@@ -1,0 +1,68 @@
+$color-map: (
+  'black':                         #000000,
+  'white':                         #ffffff,
+  'theme-background':              #f2f2f2,
+  'theme-text':                    #a3ada7,
+  'theme-text2':                   #a4ada7,
+  'theme-text3':                   #c4ccc6,
+  'theme-text-heading':            #1b1b1b,
+  'theme-text-heading2':           #219c4a,
+  'theme-devider':                 #f3f7ef,
+  'theme-devider2':                #dfe1e4,
+  'theme-active-backgr':           #ebf8de,
+  'theme-active-text':             #6e892d,
+  'theme-header-background':       #404040,
+  'theme-notification':            #98c82b,
+  'grey':                          #4c4c4c,
+  'dark-grey':                     #222,
+  'card-background':               #fcfbfb,
+  'blue':                          #2ed0c6,
+  'disabled':                      #aeaeae,
+  'disabled2':                     #d6d6d6,
+  'disabled3':                     #d4d4d4,
+  'disabled4':                     #b8b8b8,
+  'tab-body':                      #f9f9f9,
+  'flip-text':                     #beeb59,
+
+);
+
+@mixin color-classes($color-name, $color) {
+  .color-#{$color-name} {
+    color: $color;
+  }
+
+  .color-bg-#{$color-name} {
+    background-color: $color;
+  }
+
+  .color-bg-full-#{$color-name} {
+    background: $color;
+  }
+  .color-bd-#{$color-name} {
+    border: 1px solid $color;
+  }
+  .color-bdbd-#{$color-name} {
+    border: 2px solid $color;
+  }
+
+  .color-bdt-#{$color-name} {
+    border-top: 1px solid $color;
+  }
+
+  .color-bdb-#{$color-name} {
+    border-bottom: 1px solid $color;
+  }
+
+  .color-bdl-#{$color-name} {
+    border-left: 1px solid $color;
+  }
+
+  .color-bdr-#{$color-name} {
+    border-right: 1px solid $color;
+  }
+
+}
+
+@each $color-name, $color in $color-map {
+  @include color-classes($color-name, $color);
+}
